@@ -11,20 +11,34 @@ div.main {
 
 }
 
-img {
-    align-self: center;
-    width: 50%;
-    height: 50%;
+div.card {
 
+    background: white;
+    padding: 20px 20px;
+    border-radius: 12px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width: 288px;
+    border-radius: 12px;
+    
 }
 
 .title {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 24px;
+    width: 90%;
+    line-height: 26px;
     text-align: center;
+    padding: 10px 20px;
 }
 
 .subtitle {
@@ -36,10 +50,12 @@ img {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 19px;
+    width: 90%;
     text-align: center;
     letter-spacing: 0.1875px;
+    padding: 10px 10px;
 
 }
 
@@ -51,4 +67,68 @@ img {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 800px;
+    background: #D5E1EF;
+    border: 1px solid red;
+
+}
+
+div.card {
+
+    background: white;
+    padding: 20px 20px;
+    border-radius: 12px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width: 288px;
+    border-radius: 12px;
+    
+}
+
+.title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    width: 90%;
+    line-height: 26px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.subtitle {
+    height: 57px;
+    left: 5.56%;
+    right: 5.56%;
+    top: calc(50% - 57px/2 + 36px);
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 0.1875px;
+    padding: 10px 10px;
+
+}
 }
